@@ -7,10 +7,10 @@ public class Main{
         int order = 0;
 
         while(order < 10){
-            --stock;
             order++;
             if(stock >= 1){
                 System.out.println(order +"번 주문성공, 남은재고: "+ stock);
+                stock--;
             }
             else {
                 System.out.println(order +"번 주문실패, 재고 없음");
